@@ -10,24 +10,20 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Ninja Chat</title>
+    <title>Chat Room</title>
   </head>
   <body>
-    <!-- container & title -->
     <div class="container my-4">
-      <h1 class="my-4 text-center">Ninja Chat</h1>
-      <!-- buttons for chatrooms -->
+      <h1 class="my-4 text-center">Chat Room</h1>
       <div class="chat-rooms mb-3 text-center">
         <div class="my-2">Choose a chatroom:</div>
         <button class="btn" id="general">#general</button>
         <button class="btn" id="gaming">#gaming</button>
         <button class="btn" id="music">#music</button>
       </div>
-      <!-- chat list / window -->
       <div class="chat-window">
         <ul class="chat-list list-group"></ul>
       </div>
-      <!-- new chat form -->
       <form class="new-chat my-3">
         <div class="input-group">
           <div class="input-group-prepend">
@@ -39,7 +35,6 @@
           </div>
         </div>
       </form>
-      <!-- update name form -->
       <form class="new-name my-3">
         <div class="input-group">
           <div class="input-group-prepend">
@@ -55,14 +50,10 @@
     </div>
 
     <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 
     <script>
-      // Your web app's Firebase configuration
       var firebaseConfig = {
         apiKey: "AIzaSyB8S3YiUKvJou-gJbuxw1ACUW6-q_M7iaY",
         authDomain: "chatroom-98b19.firebaseapp.com",
@@ -72,7 +63,6 @@
         messagingSenderId: "214450138216",
         appId: "1:214450138216:web:9f79c378be6583a6c99fdd",
       };
-      // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       const db = firebase.firestore();
     </script>
